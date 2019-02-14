@@ -10,7 +10,7 @@ for i in range(1, n+1):
     tmp_sum = 0
     tmp = i
 
-    for j in range(4):
+    for j in range(5):
         tmp_sum += tmp % 10
         tmp = tmp // 10
 
@@ -18,3 +18,4 @@ for i in range(1, n+1):
         sum += i
 
 print(sum)
+

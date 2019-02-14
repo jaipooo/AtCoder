@@ -4,13 +4,11 @@ discover = False
 
 y = y// 1000
 
-for i in range(y//10+1):
-    for j in range(y//5+1):
-        for k in range(y//1+1):
-            if y==i*10+j*5+k*1 and n==i+j+k:
-                discover = True
-                break
-        if discover == True:
+for i in range(n+1):
+    for j in range(n-i+1):
+        k = n-i-j
+        if k>=0 and y==i*10+j*5+k*1:
+            discover = True
             break
 
     if discover == True:
